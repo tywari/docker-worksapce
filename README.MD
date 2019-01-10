@@ -6,7 +6,7 @@ The docker image contains LEMP stack (Linux Nginx MySQL Php) with node and compo
 Clone the repository.
 
 ```console
-user@domain:~$ git clone https://github.com/
+user@domain:~$ https://github.com/tywari/docker-worksapce.git
 ```
 
 Place your project files in `repository/` directory. Configure virtual hosts by adding Nginx configuration file to `nginx-conf/` directory. and run the container using

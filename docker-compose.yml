@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    workspace:
+        container_name: workspace
+        build: ./workspace
+        volumes:
+            - ./repository:/var/www/html
+            - ./nginx-config:/etc/nginx/sites-available
+            - ./nginx-config:/etc/nginx/sites-enabled
+        ports:
+            - 80:80
+        extra_hosts:
+            - phpinfo.test:127.0.0.1
+        working_dir: /var/www/html
+        tty: true

@@ -1,5 +1,5 @@
 FROM	ubuntu:latest
-LABEL	maintainer="Siddhant Baviskar <@siddhantfriends>"
+LABEL	maintainer="Anuj Tiwari
 
 RUN		apt-get update
 RUN		apt-get install -y software-properties-common
